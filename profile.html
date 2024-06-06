@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="profile.css" />
+
+    <title>Profile Page</title>
+  </head>
+
+  <body style="background-color: white">
+    <header class="headerhome">
+      <div class="containerone">
+        <img src="logo/images.png" alt="" class="headlogo" />
+        <h3 id="Name">
+          <b
+            >GROWTH <br />
+            Guide</b
+          >
+        </h3>
+
+        <div class="headsearch">
+          <div>
+            <form class="search-container">
+            <input type="text" placeholder="Search" name="courses">
+            <button type="submit" id="search button" p><i class="fa fa-search"><img src="icons/search_FILL0_wght400_GRAD0_opsz24.png" alt=""></i></button>
+            </form>
+          </div>
+        </div>
+      <script>
+          /* search bar responce */
+          document.getElementById('searchButton').addEventListener('click', function () {
+          var searchTerm = document.getElementById('searchInput').value;
+          alert('You searched for: ' + searchTerm);
+      });
+      const optionsEls =document.
+      querySelectorAll(".option")
+      const searchEl = document.querySelector(".search");
+
+      const search = () =>
+      optionsEls.forEach(
+        (e) =>
+        (e.style.display =
+         e.innerHTML.toUpperCase().indexOf
+          (searchEl.value.toUpperCase()) >-1
+          ? ""
+          : "none")
+      )
+      </script>
+
+        <nav class="nav-bar">
+          <h4 class="heroh4"><a href="index.html" class="link">Home</a></h4>
+          <h4 class="heroh4"><a href="#Courses" class="link">Courses</a></h4>
+          <h4 class="heroh4"><a href="#About" class="link">About</a></h4>
+          <h4 class="heroh4"><a href="#Contact" class="link">Contact</a></h4>
+          <h4 class="heroh4"><a href="Login.html" class="link">Logout</a></h4>
+        </nav>
+        <div>
+          <a href="profile.html"
+            ><img src="IMG/profile 2.jpg" alt="" class="profile"
+          /></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <h2>Personal Details</h2>
+      <label for="name">Name:</label>
+      <input type="name" id="name" readonly value="GOWTHAM L" />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        readonly
+        value="gowtham.design2003@example.com"
+      />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" readonly value="gowtham" />
+
+      <label for="phone">Phone No:</label>
+      <input type="" id="phone" readonly value="91+ 8925149793" />
+
+      <label for="phone">User Id:</label>
+      <input type="userId" id="userId" readonly value="#7658947" />
+    </div>
+  </body>
+</html>

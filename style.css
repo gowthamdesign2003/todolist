@@ -1,0 +1,372 @@
+
+/*   Home page in Elearning website */
+
+/*header container*/
+
+
+.headerhome {
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+
+
+.containerone {
+  width: 100%;                              /* Hesdder */
+  max-width: 188vh;
+  height: 80%;                                   
+  max-height: 80px;
+  background-color: rgb(255, 255, 255);     /*White*/
+  display: flex;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3); 
+  padding-left: 100px;
+  padding-top: 0px;
+}
+
+
+.headlogo {
+  max-height: 100%;
+  height: 50px;
+  max-width: 100%;
+  width: 50px;
+  padding-top: 15px; padding-bottom: 0px;
+}
+
+
+#Name {  /*Growth guide*/
+font-family: popins;
+color: blue;      /*blue*/  
+margin-left: 12px; padding-top: 0px; 
+}
+
+.nav-bar {    /*navigation*/
+display: flex;
+margin-left: 100px;
+gap: 40px;
+font-family: popins;
+font-size: 16px;
+font-weight: 15px;
+padding-top: 14px;
+}
+
+
+.link{ /*nav beetween pading*/
+text-decoration: none;
+}
+
+
+.search-container {
+display: flex;
+align-items: center;
+width: 300px; /* Adjust as needed */
+height: 40px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-left: 30px; margin-top: 20px;
+}
+
+
+input[type="text"] {
+width: 80%;
+padding: 10px;
+border: none;
+outline: none;
+}
+
+button {
+background-color: #ffffff;
+color: white;
+border: none;
+padding: 0px 15px;
+cursor: pointer;
+width: 24px; height: 24px;
+}  
+
+.profile {
+height: 50px;
+width: 50px;
+padding-top: 15px;
+margin-left: 50px;
+}
+/*header end*/
+
+
+
+
+
+/* Hero section styles */  
+.hero {
+    text-align: left;                                 /* Hero section css style */
+    padding: 40px 0px 0px 100px;
+    display: flex;
+  }
+
+.herobutton {
+    height: 50px;
+    width: 300px;
+    background-color: rgb(92, 92, 221);
+    color: white;
+    padding: 12px;                                    /* Hero button Explore */
+    font-size: 20px;
+    margin-top: 100px;
+    border-color: rgb(92, 92, 92);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.herowelcome {
+    padding-top: 10px;
+  }
+  
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+.heropara {
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+.heroimg {
+    padding: 0px 0px 0px 50px;
+    margin-right: 80px;
+}
+
+.boxcontent {
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    padding: 20px 0px 20px 0px;
+    justify-content: center;
+    border: 1px solid rgb(63, 63, 63);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    text-align: center;
+}
+
+
+/* Hero programs */
+.programs2 {
+    display: flex;
+    padding: 100px 0px 0px 100px;
+    justify-content: center;
+}
+
+.cerprograms {
+    padding-left: 10px;
+}
+
+.degreeicon {
+  margin-top: 20px;
+    max-width: 100%;
+    height: 40px;
+    max-width: 100%;                    /* degree and crtificte icon */
+    width: 40px;
+    display: inline;
+    padding-top: 0px;
+}
+
+
+
+.hometalk {
+  display: flex;
+  background-color: rgb(130, 70, 243);
+}
+
+.hometalk1 h1{
+  padding-top: 80px;
+  padding-left: 100px;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.hometalk1 h2 {
+  padding-left: 100px;
+  color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+.hometalk2 {
+  text-align: center;
+  padding: 40px;
+  margin-left: 30px;
+  margin-top: 100px;
+  padding-left: 300px;
+}
+
+.hometalk3 {
+  margin-top: 20px;
+  height: 40px;
+  width: 120px;
+  color: black;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+
+
+
+
+/*course view enroll program*/
+main {
+    padding: 20px;
+  }
+  
+  .courses {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px 100px 30px 100px;
+  }
+  
+  .course {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .courseimg {
+    align-items: center;
+    max-height: 100%;
+    height: 200px;
+    max-width: 100%;
+    width: 500px;
+    /*padding-left: 80px;*/
+  }
+  
+  .java {
+    max-height: 100%;
+    height: 200px;
+    max-width: 100%;
+    width: 500px;
+  }
+
+
+  .enrollnow {
+    display: block;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  /* ai courses 1 */
+  .programs3ai {
+    display: flex;
+    padding: 100px 0px 0px 100px;
+  }
+
+  .course-grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px 100px 30px 100px;
+  }
+
+
+
+
+
+
+
+  /* Footer home page */
+footer {
+    background-color: 0a1535;
+    color: f9f9f9;
+}
+
+
+
+/*.courses {
+    display: flex;
+}*/
+
+.footerflex {
+    display: flex;
+    padding-left: 40px;
+    padding-top: 60px;
+    margin-left: 100px;
+}
+
+
+
+footer section {
+    padding: 0 50px;
+}
+
+.footerhome1 {
+    padding-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+}
+
+.footerimg {
+    display: block;
+    height: 30px;
+    margin: 0 0 0px;
+}
+
+.ulfooter {
+    list-style: none;
+    padding-right: 100px;
+    /*padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 80px;
+    grid-template-columns: repeat(2, 1fr);*/
+}
+
+.ulfooter1 {
+  list-style: none;
+  padding-left: -80px;
+  margin: 0px 0px 0px 0px;
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footercontent {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footerheading {
+    color: rgb(255, 255, 255 / 40%);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+  

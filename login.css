@@ -1,0 +1,92 @@
+/* Resetting default browser styles */    /*Login */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;           /*Login page*/
+  }
+  
+  .bodygif {
+    font-family: Arial, sans-serif;
+    /*background-color: #fff;*/
+    background-image: url(https://i.gifer.com/SUV4.gif);
+    background-repeat: l;
+    background-size: cover;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .login-form {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin-bottom: 5px;
+    padding: 20px 20px 40px 20px;
+    padding-top: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 500px;
+  }
+  
+  .loginpadd {
+    margin-bottom: 10px;
+  }
+  
+  .login {
+    text-align: center;
+    color: blue;
+  }
+  
+  .login-form h1 {
+    margin-bottom: 40px;
+  }
+  
+  .label {
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+  
+
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .login-form p {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .login-form a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .login-form a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Login page*********************************************************************************************************************end */
+  

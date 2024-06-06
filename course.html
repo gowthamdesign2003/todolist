@@ -1,0 +1,198 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GROWTH GUIDE</title>
+  </head>
+  <link rel="stylesheet" href="course.css" />
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const messageInput = document.getElementById("messageInput");
+      const sendButton = document.getElementById("sendButton");
+      const cameraIcon = document.getElementById("cameraIcon");
+      const voiceRecorderIcon = document.getElementById("voiceRecorderIcon");
+      const emojiSenderIcon = document.getElementById("emojiSenderIcon");
+      const chatMessages = document.getElementById("chatMessages");
+
+      sendButton.addEventListener("click", function () {
+        const message = messageInput.value.trim();
+        if (message !== "") {
+          appendMessage("You", message);
+          messageInput.value = "";
+        }
+      });
+
+      cameraIcon.addEventListener("click", function () {
+        // Implement camera functionality
+        alert("Camera clicked");
+      });
+
+      voiceRecorderIcon.addEventListener("click", function () {
+        // Implement voice recorder functionality
+        alert("Voice recorder clicked");
+      });
+
+      emojiSenderIcon.addEventListener("click", function () {
+        // Implement emoji sender functionality
+        alert("Emoji sender clicked");
+      });
+
+      function appendMessage(sender, text) {
+        const messageElement = document.createElement("div");
+        messageElement.className = "message";
+        messageElement.innerHTML = `<strong>${sender}:</strong> ${text}`;
+        chatMessages.appendChild(messageElement);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+    });
+  </script>
+
+  <body>
+    <header class="headerhome">
+      <div class="containerone">
+        <img src="logo/images.png" alt="" class="headlogo" />
+        <h3 id="Name">
+          <b
+            >GROWTH <br />
+            Guide</b
+          >
+        </h3>
+
+        <div class="headsearch">
+          <div>
+            <form class="search-container">
+              <input type="text" placeholder="Search" name="courses" />
+              <button type="submit" p>
+                <i class="fa fa-search"
+                  ><img
+                    src="icons/search_FILL0_wght400_GRAD0_opsz24.png"
+                    alt=""
+                /></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <nav class="nav-bar">
+          <h4 class="heroh4"><a href="index.html" class="link">Home</a></h4>
+          <h4 class="heroh4"><a href="#Courses" class="link">Courses</a></h4>
+          <h4 class="heroh4"><a href="#About" class="link">About</a></h4>
+          <h4 class="heroh4"><a href="#Contact" class="link">Contact</a></h4>
+          <h4 class="heroh4"><a href="Login.html" class="link">Logout</a></h4>
+        </nav>
+        <div>
+          <img src="IMG/profile 2.jpg" alt="" class="profile" />
+        </div>
+      </div>
+    </header>
+
+    <div id="vedio-chat">
+      <div class="course-vedio">
+        <video
+          src="vedio/istockphoto-1281389449-640_adpp_is.mp4"
+          controls
+          autoplay
+          muted
+          loop
+          class="vedio"
+        ></video>
+      </div>
+
+      <div class="chat-box">
+        <div class="chat-header">
+          <h4>Chat Code : Z82UT1</h4>
+          <img src="icons/link_FILL0_wght400_GRAD0_opsz24.svg" id="link-copy" />
+        </div>
+        <div class="chat-messages" id="chatMessages">
+          <!-- Messages will be displayed here -->
+        </div>
+        <div class="chat-input">
+          <div class="icon" id="emojiSenderIcon">&#128515;</div>
+          <input
+            type="text"
+            id="messageInput"
+            placeholder="Type your message..."
+          />
+          <div class="icon" id="cameraIcon">&#128247;</div>
+          <div class="icon" id="voiceRecorderIcon">&#127908;</div>
+          <button id="sendButton">
+            <img src="icons/send.svg" alt="" />
+          </button>
+          <div class="icons"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="flex">
+    <div class="course-container">
+      <div class="lecture">
+        <div class="play-icon">&#9654;</div>
+        <div class="lecture-name">Introduction to Artificial Intelligence</div>
+      </div>
+
+      <div class="lecture">
+        <div class="play-icon">&#9654;</div>
+        <div class="lecture-name">Machine Learning Fundamentals</div>
+      </div>
+
+      <div class="lecture">
+        <div class="play-icon">&#9654;</div>
+        <div class="lecture-name">Deep Learning Fundamentals</div>
+      </div>
+
+      <div class="lecture">
+        <div class="play-icon">&#9654;</div>
+        <div class="lecture-name">AI Learning Fundamentals</div>
+      </div>
+
+      <!-- Add more lectures as needed -->
+    </div>
+
+    <div class="user-container">
+      <div class="user">
+        <span class="username">LIVE PARTICEPANTS</span>
+      </div>
+
+        <div class="user">
+          <span class="username">User 1</span>
+          <span class="status online"></span>
+          <span class="mute-icon">🔇</span>
+        </div>
+        
+        <div class="user">
+          <span class="username">User 2</span>
+          <span class="status online"></span>
+          <span class="mute-icon">🔇</span>
+        </div>
+
+        <div class="user">
+          <span class="username">User 2</span>
+          <span class="status online"></span>
+          <span class="mute-icon">🔇</span>
+        </div>
+
+        <div class="user">
+          <span class="username">User 2</span>
+          <span class="status online"></span>
+          <span class="mute-icon">🔇</span>
+        </div>
+
+        <div class="user">
+          <span class="username">User 2</span>
+          <span class="status online"></span>
+          <span class="mute-icon">🔇</span>
+        </div>
+
+        <div class="user">
+          <span class="username">User 2</span>
+          <span class="status online"></span>
+          <span class="mute-icon">🔇</span>
+        </div>
+
+      </div>
+        
+        <!-- Add more users as needed -->
+      </div>
+  </body>
+</html>
